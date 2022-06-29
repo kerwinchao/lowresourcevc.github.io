@@ -25,7 +25,7 @@
 
 <section class="main-content">
     <h1 id=""><center>Delivering Speaking Style in Low-resource Voice Conversion with Multi-factor Constraints</center></h1>
-    <center> Zhichao Wang<sup>1</sup> </center>
+    <center> Zhichao Wang<sup>1</sup>, Xinsheng Wang<sup>1</sup>, Lei Xie<sup>1</sup>, Qiao Tian<sup>2</sup>, Yuping Wang<sup>2</sup> </center>
     <center> <sup>1</sup> Audio, Speech and Language Processing Group (ASLP@NPU), School of Computer Science, Northwestern Polytechnical University, Xi'an, China</center>
     <center> <sup>2</sup> SAMi, ByteDance Inc., Shanghai, China</center>
 
@@ -35,7 +35,7 @@
   <li><a href="#system">System Description</a></li>
   <li><a href="#comparison">Demos -- Comparison Analysis</a></li>
   <li><a href="#ablation">Demos -- Ablation Analysis</a></li>
-  <!-- <li><a href="#duration">Demos -- Vary Duration</a></li> -->
+  <li><a href="#duration">Vary Duration</a></li>
   <li><a href="#more">More Demos</a></li>
 </ul>
 
@@ -62,8 +62,8 @@ Comparison Systems
   <tbody>
     <tr>
       <td style="text-align: center; width: 150px;" rowspan=2><strong>Target Speaker<strong></td>
-      <td style="text-align: center; width: 150px;" rowspan=2><strong>Source speech<strong></td>
-        <td style="text-align: center; width: 150px;" rowspan=2><strong>Source speech (Vocoder)<strong></td>
+      <td style="text-align: center; width: 150px;" rowspan=2><strong>Source Speech<strong></td>
+        <td style="text-align: center; width: 150px;" rowspan=2><strong>Source Speech (Vocoder)<strong></td>
       <td style="text-align: center; width: 150px;" colspan=5><strong>Method<strong></td>
     </tr>
     <tr>
@@ -260,8 +260,8 @@ Comparison Systems
   <tbody>
     <tr>
       <td style="text-align: center; width: 150px;" rowspan=2><strong>Target Speaker<strong></td>
-      <td style="text-align: center; width: 150px;" rowspan=2><strong>Source speech<strong></td>
-        <td style="text-align: center; width: 150px;" rowspan=2><strong>Source speech (Vocoder)<strong></td>
+      <td style="text-align: center; width: 150px;" rowspan=2><strong>Source Speech<strong></td>
+        <td style="text-align: center; width: 150px;" rowspan=2><strong>Source Speech (Vocoder)<strong></td>
       <td style="text-align: center; width: 150px;" colspan=5><strong>Method<strong></td>
     </tr>
     <tr>
@@ -587,8 +587,24 @@ Comparison Systems
 </tbody>
 </table>
 
+<h2>5. Vary Duration<a name="duration"></a></h2>
+<blockquote>We further verify the proposed model's performance under the different recordings duration (1, 3, 5, 15, 30, and 350 seconds). The results of CER, $D_{style}$, Cos.Sim are shown in these figures. In general, the results are affected by the total duration of the data, the longer the duration, the better the results, and vice versa.</blockquote>
+<table>
+  <tbody>
+    <tr>
+      <td>CER</td>
+      <td>$D_{style}$</td>
+      <td> Cos.Sim </td>
+    </tr>
+    <tr>
+      <td><img src='fig/CER.jpg' width=800px></td>
+      <td><img src='fig/Style.jpg' width=800px></td>
+      <td><img src='fig/COS.jpg' width=800px></td>
+    </tr>
+  </tbody>
+</table>
 
-<h2>5. More Demos (1 utt.)<a name="comparison"></a></h2>
+<h2>6. More Demos (1 utt.)<a name="comparison"></a></h2>
 
 <!-- <h3>4.1. Demos -- Effectiveness of different style level<a name="mutiscale"></a></h2> -->
 <table>
